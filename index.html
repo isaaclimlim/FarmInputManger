@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmInputManager</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🚜 FarmInputManager</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero">
+        <h1>Welcome to FarmInputManager</h1>
+        <p>Your trusted partner in farm input management, helping you achieve optimal productivity.</p>
+        
+        <div class="slider">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="image-container">
+                <img class="slide active" src="media/farm-scenery.jpg" alt="Farm">
+                <img class="slide" src="media/plant.jpg" alt="Soil">
+                <img class="slide" src="media/greenhouse.jpg" alt="Greenhouse">
+                <img class="slide active" src="media/products.jpg" alt="Farm">
+                <img class="slide" src="media/tractor-cultivating-field.jpg" alt="Soil">
+                <img class="slide" src="media/tractor-cultivating-field.jpg" alt="Greenhouse">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+     <!-- Services Section -->
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="service-box">
+                    <div class="service">
+                        <h3>Consultation</h3>
+                        <p>Expert advice to improve your farm's efficiency and productivity.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Supply Chain Management</h3>
+                        <p>Streamlined processes to ensure timely delivery of quality inputs.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Technology Integration</h3>
+                        <p>Integrating the latest technology to maximize farm productivity.</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="learn-more">Learn More</button>
+                    <button id="get-started">Get Started</button>
+                </div>
+            </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 FarmInputManager. All rights reserved.</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
