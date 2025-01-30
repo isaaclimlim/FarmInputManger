@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+    margin: 30px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-text h1 {
+    color: rgb(184, 214, 12);
+}
+
+.values, .team, .history, .testimonials {
+    text-align: center;
+    padding: 40px 20px;
+    margin-left: 30px;
+}
+
+.values h2, .team h2, .history h2, .testimonials h2 {
+    color: rgb(184, 214, 12);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+}
+
+.icons div:hover {
+    transform: translateY(-10px);
+}
+
+.icons span {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.icons p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.team-container div:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.history-content div {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.history-content div:hover {
+    transform: translateY(-10px);
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.history-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonial-slider .testimonial {
+    animation: fade 1s ease-in-out;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
